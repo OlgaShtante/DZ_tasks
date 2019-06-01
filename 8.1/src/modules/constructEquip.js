@@ -14,7 +14,7 @@ ConstructionEquipment.prototype.close = function(){
     return closeConstructionElem;
 }
 ConstructionEquipment.prototype.lock = function(){
-    const lockConstructionElem = "It is closed during the lesson";
+    const lockConstructionElem = "It is locked before the lesson";
     console.log(lockConstructionElem);
     return lockConstructionElem;
 }

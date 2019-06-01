@@ -5,7 +5,7 @@ function Teacher(firstName, lastName, age){
 }
 
 Teacher.prototype.teaches = function(){
-    const teacherTeaches = `${this.firstName}${this.lastName} teaches JS`;
+    const teacherTeaches = `${this.firstName} ${this.lastName} teaches JS`;
     console.log(teacherTeaches);
     return teacherTeaches;
 }

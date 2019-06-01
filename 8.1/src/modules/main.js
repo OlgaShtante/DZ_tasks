@@ -56,11 +56,7 @@ room57.roomTechEquipment = roomTechEquipment;
 room57.roomConstructionElements = roomConstructionElements;
 room57.roomDecorElements = roomDecorElements;
 
+
 console.log(room57);
-console.log(room57.realTeacher.teaches);
-console.log(room57.groupOfStudents.study);
-console.log(room57.roomFurniture.arrage);
-console.log(room57.roomTechEquipment.use);
-console.log(room57.roomConstructionElements.open);
-console.log(room57.roomDecorElements.makeComfortable);
+
 
