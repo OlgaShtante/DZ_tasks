@@ -12,7 +12,7 @@ function DecorElements(curtains, wall){
     paintTheWall('colorful');
       
     this.decorWalls = function() {
-    this.wall =`abstract art`;
+    this.wall ="abstract art";
     alert( `${this.wall} makes the room more interesting` );
     }
     }

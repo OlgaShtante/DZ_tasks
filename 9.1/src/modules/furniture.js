@@ -7,8 +7,8 @@ function Furniture(computerDesks, teacherDesk, chairs, studyDesks, rollingChairs
     this.chairs = chairs;
     this.studyDesks = studyDesks;
     this.rollingChairs = rollingChairs;
-    this.computerDesks = 'small';
-    this.allChairs = 'standard';
+    this.computerDesks = "small";
+    this.allChairs = "standard";
     this.chairs = furnitureParam;
 
     const useFurniture = function(furnitureParam){
@@ -17,14 +17,14 @@ function Furniture(computerDesks, teacherDesk, chairs, studyDesks, rollingChairs
     useFurniture('comfortable');
         
     this.breakFurniture = function(){
-    this.rollingChairs = `often broken`;
+    this.rollingChairs = "often broken";
     console.log(`Rolling chairs are ${this.rollingChairs}`);
 }
 }
 
 Furniture.prototype.arrange = function(){
   const arrangeFurniture = `should be at the right place!`;
-  this.chairs = `furniture`;
+  this.chairs = "furniture";
   console.log(`This ${this.chairs} ${arrangeFurniture}`);
   }
 

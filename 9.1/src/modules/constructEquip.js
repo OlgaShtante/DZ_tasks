@@ -12,13 +12,13 @@ function ConstructionEquipment(door, window){
     lockTheDoor('locked');
         
     this.open = function() {
-    this.window =`opened`;
+    this.window ="opened";
     console.log(`Window is ${this.window} during the break`);
     }
 }
 
 ConstructionEquipment.prototype.close = function(){
-    this.window = `closed`;
+    this.window = "closed";
     console.log(`It is ${this.window} during the lesson`);
 }
 

@@ -57,7 +57,6 @@ room57.roomTechEquipment = roomTechEquipment;
 room57.roomConstructionElements = roomConstructionElements;
 room57.roomDecorElements = roomDecorElements;
 
-debugger;
 console.log(room57);
 
 

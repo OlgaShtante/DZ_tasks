@@ -14,14 +14,14 @@ const askQuestion = function(teachParam){
 askQuestion('Yury');
 
   this.introduce = function() {
-  this.firstName =`Юра`;
+  this.firstName ="Юра";
     alert( `Меня зовут ${this.firstName} ${this.lastName}, я преподаю JS.` );
   }
 }
 
 Teacher.prototype.teach = function(){
-  this.firstName =`Yurij`;
-  console.log(`${this.firstName} ${this.lastName} teaches JS`)
+  this.firstName ="Yurij";
+  console.log(`${this.firstName} ${this.lastName} teaches JS`);
 }
 
 
