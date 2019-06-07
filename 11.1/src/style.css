@@ -1,0 +1,25 @@
+body{
+  text-align:center;
+  background-color: whitesmoke;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  font-size: 28px;
+}
+button{
+  width:420px;
+  height: 80px;
+  margin-top: 60px;
+  margin-bottom:50px;
+  background: #4285f4;
+  border:3px solid #3e69b2;
+  border-radius: 15px;
+  color: whitesmoke;
+  text-shadow: 1px 1px 1px #849fcc;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  font-size:30px;
+}
+
+h3{
+  margin-top:120px;
+  color: gray;
+  text-shadow: 1px 1px 1px #849fcc;
+}
