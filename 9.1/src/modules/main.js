@@ -4,7 +4,7 @@ import { Furniture } from './furniture.js';
 import { TechEquipment } from './techEquip.js';
 import { ConstructionEquipment } from './constructEquip.js';
 import { DecorElements } from './decElements.js';
-
+import { Room } from './room.js';
 
 const realTeacher = new Teacher("Yury", "Tatsenka", 33);
 const rusTeacher = new Teacher("Юрий", "Татенко", 33);
@@ -44,18 +44,8 @@ const roomDecorElements = new DecorElements(
         {"decorType":"wallPainting", "style":"abstractArt"}
 );
 
-function Room(teacher, students, furniture, techEquip, constructEquip, decElements){
-}
-
-const room57 = new Room(realTeacher, groupOfStudents, roomFurniture, roomTechEquipment, roomConstructionElements, roomDecorElements);
-
-room57.realTeacher = realTeacher;
-room57.rusTeacher = rusTeacher;
-room57.groupOfStudents = groupOfStudents;
-room57.roomFurniture = roomFurniture;
-room57.roomTechEquipment = roomTechEquipment;
-room57.roomConstructionElements = roomConstructionElements;
-room57.roomDecorElements = roomDecorElements;
+const room = new Room(rusTeacher, groupOfStudents, roomFurniture, roomTechEquipment, roomConstructionElements, roomDecorElements);
+const room57 = new Room(realTeacher, "M-FD2-54-19", "chairs and desks", "computers", roomConstructionElements, 'Abstract wallPainting');
 
 console.log(room57);
 
