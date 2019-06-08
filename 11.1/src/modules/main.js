@@ -9,8 +9,8 @@ function checkPasswordByClick(){
 }
 
 function checkIfPasswordIsValid(){
-let passwordField = prompt("Input your password to verify");
-let validPassword = 'mypassword';
+const passwordField = prompt("Input your password to verify");
+const validPassword = 'mypassword';
   if(passwordField === validPassword){
      return true;
   }
