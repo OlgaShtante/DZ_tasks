@@ -1,5 +1,3 @@
-const furnitureParam = "useful";
-
 function Furniture(computerDesks, teacherDesk, chairs, studyDesks, rollingChairs)
 {
   this.computerDesks = computerDesks;

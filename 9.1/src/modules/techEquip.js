@@ -1,5 +1,3 @@
-const techEquipParam = "working well";
-
 function TechEquipment(computers, projector, airConditioning){
   this.computers = computers;
   this.projector = projector; 

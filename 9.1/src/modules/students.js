@@ -1,5 +1,3 @@
-const studentParam = "smart";
-
 function Students(boys, girls){
   this.boys = boys;
   this.girls = girls;
