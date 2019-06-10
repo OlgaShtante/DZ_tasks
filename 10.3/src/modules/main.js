@@ -7,12 +7,12 @@ import { DecorElements } from "./decElements.js";
 import { Room } from "./room.js";
 
 const realTeacher = new Teacher("Yury", "Tatsenka", 33);
-//область видимости ограничена данным модулем main.js и модулем teacher.js
+//область видимости ограничена данным модулем main.js
 const rusTeacher = new Teacher("Юрий", "Татенко", 33);
-//область видимости ограничена данным модулем main.js и модулем teacher.js
+//область видимости ограничена данным модулем main.js
 
 const groupOfStudents = new Students(
-  //область видимости ограничена данным модулем main.js и модулем students.js
+  //область видимости ограничена данным модулем main.js
   [
     " Maxim",
     " Alexandr",
@@ -29,7 +29,7 @@ const groupOfStudents = new Students(
 );
 
 const roomFurniture = new Furniture(
-  //область видимости ограничена данным модулем main.js и модулем furniture.js
+  //область видимости ограничена данным модулем main.js
   20,
   1,
   20,
@@ -43,7 +43,7 @@ const roomFurniture = new Furniture(
 );
 
 const roomTechEquipment = new TechEquipment(
-  //область видимости ограничена данным модулем main.js и модулем techEquip.js
+  //область видимости ограничена данным модулем main.js
   {
     monitors: 21,
     systemUnits: 21,
@@ -57,7 +57,7 @@ const roomTechEquipment = new TechEquipment(
 );
 
 const roomConstructionElements = new ConstructionEquipment(
-  //область видимости ограничена данным модулем main.js и модулем constructEquip.js
+  //область видимости ограничена данным модулем main.js
   { material: "wood", size: "standard" },
   {
     material: {
@@ -69,13 +69,13 @@ const roomConstructionElements = new ConstructionEquipment(
 );
 
 const roomDecorElements = new DecorElements(
-  //область видимости ограничена данным модулем main.js и модулем decElements.js
+  //область видимости ограничена данным модулем main.js
   { type: "roll", material: "fabric" },
   { decorType: "wallPainting", style: "abstractArt" }
 );
 
 const room = new Room(
-  //область видимости ограничена данным модулем main.js и модулем room.js
+  //область видимости ограничена данным модулем main.js
   rusTeacher,
   groupOfStudents,
   roomFurniture,
@@ -84,7 +84,7 @@ const room = new Room(
   roomDecorElements
 );
 const room57 = new Room(
-  //область видимости ограничена данным модулем main.js и модулем room.js
+  //область видимости ограничена данным модулем main.js
   realTeacher,
   "M-FD2-54-19",
   "chairs and desks",
