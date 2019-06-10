@@ -5,7 +5,7 @@ function Students(boys, girls) {
   this.boys = boys;
   this.girls = girls;
   this.group = "M-FD2-54-19";
-  this.boys = studentParam;
+  this.mostOfGroup = boys;
 
   const askQuestion = function(studentParam) {
     //область видимости ограничена функцией-конструктором Students(){}
