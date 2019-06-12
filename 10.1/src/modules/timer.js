@@ -26,7 +26,7 @@ Timer.prototype.init = function() {
 
 let startTime;
 let myInterval;
-let lastDifferenceSeconds = 0;
+let totalDifferenceSeconds = 300;
 let differenceSeconds = 0;
 
 function onStartButtonClick() {
@@ -40,13 +40,13 @@ function onStopButtonClick() {
   ClassUpdate.removeClass("disabled", htmlElements.buttons);
   ClassUpdate.addClass("disabled", [htmlElements.stopButton]);
   clearInterval(myInterval);
-  lastDifferenceSeconds = differenceSeconds;
+  totalDifferenceSeconds = differenceSeconds;
 }
 
 function onResetButtonClick() {
   ClassUpdate.removeClass("disabled", htmlElements.buttons);
   ClassUpdate.addClass("disabled", [htmlElements.resetButton]);
-  lastDifferenceSeconds = 0;
+  totalDifferenceSeconds = 300;
   startTime = new Date().getTime();
   clearInterval(myInterval);
   htmlElements.output.innerText = "00:05:00";
@@ -54,20 +54,22 @@ function onResetButtonClick() {
 
 function onIntervalTick() {
   const differenceMilliseconds = new Date().getTime() - startTime;
-  differenceSeconds = differenceMilliseconds / 1000 + lastDifferenceSeconds;
+  differenceSeconds = totalDifferenceSeconds - differenceMilliseconds / 1000;
   let seconds = parseInt(differenceSeconds % 60);
   let minutes = parseInt((differenceSeconds / 60) % 60);
-  if (minutes < 10) {
-    minutes = `0${minutes}`;
-  }
-
+  let hours = parseInt((differenceSeconds / 3600) % 60);
   if (seconds < 10) {
     seconds = `0${seconds}`;
   }
+  if (minutes < 10) {
+    minutes = `0${minutes}`;
+  }
+  if (hours < 10) {
+    hours = `0${hours}`;
+  }
+  htmlElements.output.innerText = `${hours}:${minutes}:${seconds}`;
 
-  htmlElements.output.innerText = `00:${minutes}:${seconds}`;
-
-  if (htmlElements.output.innerText === "00:05:00") {
+  if (htmlElements.output.innerText === "00:00:00") {
     timeIsOver();
   }
 }
