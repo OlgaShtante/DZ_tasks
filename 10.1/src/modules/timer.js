@@ -77,8 +77,8 @@ function onIntervalTick() {
 
 function timeIsOver() {
   clearInterval(myInterval);
-  alert("Your time is OVER!");
   htmlElements.output.innerText = "00:05:00";
+  alert("Your time is OVER!");
 }
 
 export { Timer };
