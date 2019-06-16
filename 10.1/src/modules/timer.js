@@ -71,14 +71,15 @@ function onIntervalTick() {
   htmlElements.output.innerText = `${hours}:${minutes}:${seconds}`;
 
   if (htmlElements.output.innerText === "00:00:00") {
+    htmlElements.output.innerText = "00:00:00";
     timeIsOver();
   }
 }
 
 function timeIsOver() {
   clearInterval(myInterval);
-  htmlElements.output.innerText = "00:05:00";
   alert("Your time is OVER!");
+  htmlElements.output.innerText = "00:05:00";
 }
 
 export { Timer };
