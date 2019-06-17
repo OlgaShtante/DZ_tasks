@@ -26,7 +26,7 @@ Timer.prototype.init = function() {
 
 let startTime;
 let myInterval;
-const totalDifferenceSeconds = 300;
+let totalDifferenceSeconds = 300;
 let differenceSeconds = 0;
 
 function onStartButtonClick() {
