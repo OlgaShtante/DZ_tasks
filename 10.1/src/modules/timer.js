@@ -72,17 +72,20 @@ function onIntervalTick() {
 
   if (differenceSeconds === 0) {
     timeIsOver();
-    alertTimeIsOver();
   }
 }
 
 function timeIsOver() {
   clearInterval(myInterval);
-  htmlElements.output.innerText = "00:00:00";
+  setTimeout(alertTimeIsOver, 1000);
+  setTimeout(setTimerToStartPosition, 1000);
 }
 
 function alertTimeIsOver() {
   alert("Your time is OVER!");
+}
+
+function setTimerToStartPosition() {
   htmlElements.output.innerText = "00:05:00";
 }
 
