@@ -26,7 +26,7 @@ Timer.prototype.init = function() {
 
 let startTime;
 let myInterval;
-const totalDifferenceSeconds = 3;
+const totalDifferenceSeconds = 300;
 let differenceSeconds = 0;
 
 function onStartButtonClick() {
@@ -46,7 +46,7 @@ function onStopButtonClick() {
 function onResetButtonClick() {
   ClassUpdate.removeClass("disabled", htmlElements.buttons);
   ClassUpdate.addClass("disabled", [htmlElements.resetButton]);
-  totalDifferenceSeconds = 3;
+  totalDifferenceSeconds = 300;
   startTime = new Date().getTime();
   clearInterval(myInterval);
   htmlElements.output.innerText = "00:05:00";
