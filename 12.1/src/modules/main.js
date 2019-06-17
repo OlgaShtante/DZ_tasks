@@ -20,7 +20,6 @@ const object = {
 object.selectColour = object;
 
 function objectCopy(object) {
-  debugger;
   if (newArray.indexOf(object) > -1) {
     return "circular reference";
   }
