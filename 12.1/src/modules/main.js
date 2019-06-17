@@ -17,12 +17,14 @@ const object = {
   }
 };
 
-newArray.push(object);
+object.selectColour = object;
 
 function objectCopy(object) {
+  debugger;
   if (newArray.indexOf(object) > -1) {
     return "circular reference";
   }
+  newArray.push(object);
 
   const copycat = {};
 
@@ -35,9 +37,8 @@ function objectCopy(object) {
   }
   return copycat;
 }
+object.size = object;
+object.selectColour.combineColour = object;
 
 const object2 = objectCopy(object);
-object.selectColour = object;
-object.size = object;
-
 console.log(object2);
