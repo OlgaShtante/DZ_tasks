@@ -26,7 +26,7 @@ Timer.prototype.init = function() {
 
 let startTime;
 let myInterval;
-let totalDifferenceSeconds = 300;
+const totalDifferenceSeconds = 3;
 let differenceSeconds = 0;
 
 function onStartButtonClick() {
@@ -46,7 +46,7 @@ function onStopButtonClick() {
 function onResetButtonClick() {
   ClassUpdate.removeClass("disabled", htmlElements.buttons);
   ClassUpdate.addClass("disabled", [htmlElements.resetButton]);
-  totalDifferenceSeconds = 300;
+  totalDifferenceSeconds = 3;
   startTime = new Date().getTime();
   clearInterval(myInterval);
   htmlElements.output.innerText = "00:05:00";
@@ -70,14 +70,18 @@ function onIntervalTick() {
   }
   htmlElements.output.innerText = `${hours}:${minutes}:${seconds}`;
 
-  if (htmlElements.output.innerText === "00:00:00") {
+  if (differenceSeconds === 0) {
     timeIsOver();
+    alertTimeIsOver();
   }
 }
 
 function timeIsOver() {
-  htmlElements.output.innerText = "00:00:00";
   clearInterval(myInterval);
+  htmlElements.output.innerText = "00:00:00";
+}
+
+function alertTimeIsOver() {
   alert("Your time is OVER!");
   htmlElements.output.innerText = "00:05:00";
 }
