@@ -1,5 +1,4 @@
 let newArray = [];
-newArray[0] = newArray;
 
 const object = {
   selectColour: {
@@ -9,19 +8,19 @@ const object = {
       mainColour: "yellow"
     },
     setColour() {
-      console.log(`colour: ${this.combineColour.tone}`);
+      console.log(`set colour is ${this.combineColour.mainColour}`);
     }
   },
   size: "S",
   setSize() {
-    console.log(`size: ${this.size}`);
+    console.log(`set size is ${this.size}`);
   }
 };
 
 newArray.push(object);
 
 function objectCopy(object) {
-  if (newArray.indexOf(object) > -1 || newArray[0] === newArray) {
+  if (newArray.indexOf(object) > -1) {
     return "circular reference";
   }
 
@@ -38,4 +37,7 @@ function objectCopy(object) {
 }
 
 const object2 = objectCopy(object);
+object.selectColour = object;
+object.size = object;
+
 console.log(object2);
