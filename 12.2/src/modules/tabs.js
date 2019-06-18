@@ -6,26 +6,22 @@ htmlElements.tabs = document.querySelectorAll(".container .tabs > div");
 
 function Tabs() {}
 Tabs.prototype.init = function(mode) {
-  window.onload = function() {
-    const tabIsOpenedByDefault = "clock";
-    tabIsActive(tabIsOpenedByDefault);
-  };
   htmlElements.links.forEach(function(link) {
-    link.addEventListener("click", tabIsSelected);
+    link.addEventListener("click", showTabIsSelected);
   });
-  tabIsActive(mode);
+  showTabIsActive(mode);
 };
 
-function tabIsSelected() {
-  tabIsActive(this.dataset.mode);
+function showTabIsSelected() {
+  showTabIsActive(this.dataset.mode);
 }
 
-function tabIsActive(mode) {
-  linkIsSelected(mode);
-  contentIsDisplayed(mode);
+function showTabIsActive(mode) {
+  showLinkIsSelected(mode);
+  displayContentOfTab(mode);
 }
 
-function linkIsSelected(mode) {
+function showLinkIsSelected(mode) {
   ClassUpdate.removeClass("selected", htmlElements.links);
   htmlElements.links.forEach(function(link) {
     if (link.dataset.mode === mode) {
@@ -34,7 +30,7 @@ function linkIsSelected(mode) {
   });
 }
 
-function contentIsDisplayed(mode) {
+function displayContentOfTab(mode) {
   ClassUpdate.addClass("hidden", htmlElements.tabs);
   htmlElements.tabs.forEach(function(tab) {
     if (tab.dataset.mode === mode) {
