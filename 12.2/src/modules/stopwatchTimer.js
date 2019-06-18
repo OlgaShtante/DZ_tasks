@@ -96,6 +96,7 @@ function StopwatchTimer(initMode, startTimeInSeconds) {
 
   function setTimerToStartPosition() {
     htmlElements.output.innerText = "00:05:00";
+    ClassUpdate.removeClass("disabled", htmlElements.buttons);
   }
 
   htmlElements.startButton.addEventListener("click", () => {
