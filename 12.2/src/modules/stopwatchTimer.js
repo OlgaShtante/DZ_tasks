@@ -1,11 +1,11 @@
 import { ClassUpdate } from "./classUpdate.js";
 
-function StopwatchTimer(initMode, startTimeInSeconds) {
+function StopwatchTimer(initMode, initSeconds) {
   let startTime;
   let myInterval;
   let mode = initMode;
   let differenceSeconds = 0;
-  let lastDifferenceSeconds = startTimeInSeconds;
+  let lastDifferenceSeconds = initSeconds;
 
   const htmlElements = {
     output: document.querySelector(`.container [data-mode="${mode}"] .output`),
@@ -49,7 +49,7 @@ function StopwatchTimer(initMode, startTimeInSeconds) {
   }
 
   function resetTime() {
-    lastDifferenceSeconds = startTimeInSeconds;
+    lastDifferenceSeconds = initSeconds;
     startTime = new Date().getTime();
     clearInterval(myInterval);
     onIntervalTick();
