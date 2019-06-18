@@ -4,6 +4,11 @@ const htmlElements = {};
 htmlElements.links = document.querySelectorAll(".container .links a");
 htmlElements.tabs = document.querySelectorAll(".container .tabs > div");
 
+window.onload = function() {
+  const tabIsOpenedByDefault = "clock";
+  tabIsActive(tabIsOpenedByDefault);
+};
+
 function Tabs() {}
 Tabs.prototype.init = function(mode) {
   htmlElements.links.forEach(function(link) {

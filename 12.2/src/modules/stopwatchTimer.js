@@ -3,9 +3,9 @@ import { ClassUpdate } from "./classUpdate.js";
 function StopwatchTimer(initMode, startTimeInSeconds) {
   let startTime;
   let myInterval;
+  let mode = initMode;
   let differenceSeconds = 0;
   let lastDifferenceSeconds = startTimeInSeconds;
-  let mode = initMode;
 
   const htmlElements = {
     output: document.querySelector(`.container [data-mode="${mode}"] .output`),
