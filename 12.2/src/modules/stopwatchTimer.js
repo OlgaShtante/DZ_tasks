@@ -8,19 +8,19 @@ function StopwatchTimer(initMode, startTimeInSeconds) {
   let mode = initMode;
 
   const htmlElements = {
-    output: document.querySelector('.container [data-mode="${mode}"] .output'),
+    output: document.querySelector(`.container [data-mode="${mode}"] .output`),
 
     buttons: document.querySelectorAll(
-      '.container .tabs [data-mode="${mode}"] .buttons button'
+      `.container .tabs [data-mode="${mode}"] .buttons button`
     ),
     startButton: document.querySelector(
-      '.container .tabs [data-mode="${mode}"] .buttons .start'
+      `.container .tabs [data-mode="${mode}"] .buttons .start`
     ),
     stopButton: document.querySelector(
-      '.container .tabs [data-mode="${mode}"] .buttons .stop'
+      `.container .tabs [data-mode="${mode}"] .buttons .stop`
     ),
     resetButton: document.querySelector(
-      '.container .tabs [data-mode="${mode}"] .buttons .reset'
+      `.container .tabs [data-mode="${mode}"] .buttons .reset`
     )
   };
 
@@ -35,7 +35,7 @@ function StopwatchTimer(initMode, startTimeInSeconds) {
     ClassUpdate.removeClass("disabled", htmlElements.buttons);
     ClassUpdate.addClass("disabled", [htmlElements.stopButton]);
     clearInterval(myInterval);
-    lastDifferenceSeconds = startTimeInSeconds;
+    lastDifferenceSeconds = differenceSeconds;
   }
 
   function onResetButtonClick() {
@@ -90,9 +90,15 @@ function StopwatchTimer(initMode, startTimeInSeconds) {
     htmlElements.output.innerText = "00:05:00";
   }
 
-  htmlElements.startButton.addEventListener("click", onStartButtonClick);
-  htmlElements.stopButton.addEventListener("click", onStopButtonClick);
-  htmlElements.resetButton.addEventListener("click", onResetButtonClick);
+  htmlElements.startButton.addEventListener("click", () => {
+    onStartButtonClick(mode);
+  });
+  htmlElements.stopButton.addEventListener("click", () => {
+    onStopButtonClick(mode);
+  });
+  htmlElements.resetButton.addEventListener("click", () => {
+    onResetButtonClick(mode);
+  });
 }
 
 export { StopwatchTimer };
