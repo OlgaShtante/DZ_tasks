@@ -36,10 +36,10 @@ function StopwatchTimer(initMode, startTimeInSeconds) {
     ClassUpdate.removeClass("disabled", htmlElements.buttons);
     ClassUpdate.addClass("disabled", [htmlElements.stopButton]);
     clearInterval(myInterval);
-    if (differenceSeconds > 0) {
-      lastDifferenceSeconds = differenceSeconds;
+    if (differenceSeconds < 0) {
+      lastDifferenceSeconds = startTimeInSeconds;
     }
-    lastDifferenceSeconds = startTimeInSeconds;
+    lastDifferenceSeconds = differenceSeconds;
   }
 
   function onResetButtonClick() {
