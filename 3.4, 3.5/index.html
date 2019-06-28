@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Tasks 3.4, 3.5</title>
+  </head>
+  <body>
+    <h1>Change background colour by adding or selecting a new one:</h1>
+    <table style="width:100%">
+      <tr>
+        <th>
+          <input
+            type="text"
+            placeholder="Enter a new colour here"
+            class="input-color"
+          />
+          <p></p>
+          <button class="add-button">Add</button>
+          <button class="remove-button">Remove</button>
+          <br />
+        </th>
+        <th>
+          <select class="dropdown">
+            <option disabled selected value="not selected"
+              >-- Select a value --</option
+            >
+            <option value="blue">blue</option>
+          </select>
+          <p></p>
+          <button class="remove-selected">Remove selected</button>
+        </th>
+      </tr>
+    </table>
+
+    <script src="main.js"></script>
+  </body>
+</html>

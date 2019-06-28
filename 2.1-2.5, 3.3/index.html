@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Tasks 2.1 - 2.5, 3.3</title>
+  </head>
+  <body>
+    <!-- The first task: input + button + HTML style-->
+    <div class="center">
+      <h1>UPDATE BACKGROUND COLOUR - Part 1</h1>
+      <p></p>
+      <input
+        type="text"
+        class="color1 input"
+        placeholder="Enter a new background colour"
+      />
+      <p></p>
+      <button onclick="f1()" class="button">CLICK TO UPDATE</button>
+      <!-- <input type="text" id="inp1"> - для выполнения 1го js из color1.js -->
+      <p></p>
+      <text class="txt">NOTE:</text>
+      <a
+        class="txt"
+        href="https://www.w3schools.com/colors/colors_names.asp"
+        target="_blank"
+        >use colour name or hex</a
+      >
+    </div>
+    <hr />
+    <!-- The second task: select + button + HTML style -->
+    <div class="center">
+      <p></p>
+      <h1>UPDATE BACKGROUND COLOUR - Part 2</h1>
+      <p></p>
+      <select class="color2 dropdown">
+        <option class="optr">Red</option>
+        <option class="optg">Green</option>
+        <option class="optb">Blue</option>
+        <option class="plh" selected>Select Colour</option>
+      </select>
+      <p></p>
+      <button onclick="f2()" class="button">CLICK TO UPDATE</button>
+    </div>
+    <hr />
+    <!-- The third task: select + button + CSS -->
+    <div class="center">
+      <p></p>
+      <h1>UPDATE BACKGROUND COLOUR - Part 3</h1>
+      <p></p>
+      <select class="dropdown color3">
+        <option class="red">red</option>
+        <option class="orange">orange</option>
+        <option class="yellow">yellow</option>
+        <option class="salad">salad</option>
+        <option class="green">green</option>
+        <option class="darkcyan">darkcyan</option>
+        <option class="blue">blue</option>
+        <option class="indigo">indigo</option>
+        <option class="purple">purple</option>
+        <option selected>Select a colour</option>
+      </select>
+      <p></p>
+      <button onclick="f3()" class="button">CLICK TO UPDATE</button>
+      <p></p>
+    </div>
+    <hr />
+    <!-- The fourth task: input + button + CSS variable -->
+    <div class="center">
+      <p></p>
+      <h1>UPDATE BACKGROUND COLOUR - Part 4</h1>
+      <p></p>
+      <input
+        type="text"
+        class="color4 input"
+        placeholder="Enter a new background colour"
+      />
+      <p></p>
+      <button onclick="f4()" class="button">CLICK TO UPDATE</button>
+      <p></p>
+    </div>
+    <hr />
+    <!-- The 5th task: onchange + this + CSS variable-->
+    <div class="center">
+      <p></p>
+      <h1>UPDATE BACKGROUND COLOUR - Part 5</h1>
+      <p></p>
+      <select class="dropdown" onchange="f5(this);">
+        <option class="white">White</option>
+        <option class="grey">Grey</option>
+        <option class="black">Black</option>
+      </select>
+      <p></p>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

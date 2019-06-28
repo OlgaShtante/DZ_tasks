@@ -1,0 +1,32 @@
+body {
+  text-align: center;
+  background-image: url(http://www.cartoonswallpapers.net/wallpapers/minions-despicable-2-cartoon-background-image-ipod.jpg);
+}
+
+h1 {
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  color: #f9d249;
+  text-shadow: 2px 2px 3px black, 0 0 1em #fbd54e;
+  font-size: 44px;
+}
+
+form {
+  padding: 50px;
+  margin-top: 70px;
+}
+
+.button {
+  height: 70px;
+  width: 300px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  box-shadow: 2px 4px 2px 2px #003742;
+  font-weight: bold;
+  background: #05b7d8;
+  border: 5px solid #025865;
+  color: #025865;
+  text-shadow: 1px 1px 1px #003742;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  font-size: 30px;
+  border-radius: 10px;
+}

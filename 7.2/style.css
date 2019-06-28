@@ -1,0 +1,16 @@
+body {
+  text-align: center;
+  background-color: #faf5f1;
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+pre {
+  text-align: left;
+  margin-left: 50px;
+}

@@ -1,0 +1,111 @@
+.button {
+  height: 40px;
+  width: 202px;
+  padding: 10px;
+  font-weight: bold;
+  background: #00cccc;
+  border: 3px solid #008080;
+  color: #004d4d;
+  text-shadow: 0.5px 0.5px 0.5 #003333;
+}
+
+.dropdown {
+  height: 40px;
+  width: 202px;
+  padding: 10px;
+  font-weight: bold;
+  background: #eff2f4;
+  outline: 1px solid #003333;
+  border: 1px solid #008080;
+}
+
+.input {
+  height: 20px;
+  width: 190px;
+  padding: 5px;
+  background-color: #eff2f4;
+  outline: 1px solid #003333;
+  border: 1px solid #008080;
+}
+
+body {
+  background-color: var(--main-color);
+}
+
+h1 {
+  font-size: 28px;
+  font-family: monospace;
+  color: #004d4d;
+  text-shadow: 1px 1px 1px black, 0 0 1em #80ffff;
+}
+
+.txt {
+  color: grey;
+}
+
+.center {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.red {
+  background-color: red;
+}
+.orange {
+  background-color: #ff6600;
+}
+.yellow {
+  background-color: #ffff00;
+}
+.salad {
+  background-color: #ccff33;
+}
+.green {
+  background-color: green;
+}
+.darkcyan {
+  background-color: #008b8b;
+}
+.blue {
+  background-color: blue;
+}
+.indigo {
+  background-color: #4b0082;
+}
+.purple {
+  background-color: #800080;
+}
+
+.grey {
+  background-color: grey;
+  color: lightgrey;
+}
+
+.black {
+  background-color: black;
+  color: white;
+}
+
+.optr {
+  color: rgb(190, 3, 41);
+  font-weight: bold;
+  background-color: pink;
+}
+
+.optg {
+  color: rgb(5, 110, 5);
+  font-weight: bold;
+  background-color: lightgreen;
+}
+
+.optb {
+  color: rgb(20, 20, 212);
+  font-weight: bold;
+  background-color: lightskyblue;
+}
+
+.plh {
+  color: rgb(90, 90, 90);
+  font-weight: bold;
+}

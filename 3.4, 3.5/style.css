@@ -1,0 +1,79 @@
+body {
+  background-color: var(--color);
+  text-align: center;
+}
+
+h1 {
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  color: #3f6f9b;
+  text-shadow: 2px 2px 3px #143350, 0 0 1em #76aadc;
+  font-size: 44px;
+  margin-top: 70px;
+  margin-bottom: 130px;
+}
+
+.remove-button {
+  height: 80px;
+  width: 150px;
+  box-shadow: 2px 4px 2px 2px #420d09;
+  font-weight: bold;
+  background: #fa8071;
+  border: 7px solid #ca3433;
+  color: #ca3433;
+  text-shadow: 1px 1px 1px #800001;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  font-size: 30px;
+  outline: 3px solid #912222;
+  margin-left: 5px;
+}
+
+.add-button {
+  height: 80px;
+  width: 150px;
+  box-shadow: 2px 4px 2px 2px #38462c;
+  font-weight: bold;
+  background: #85c549;
+  border: 7px solid #3daa3d;
+  color: #3daa3d;
+  text-shadow: 1px 1px 1px #173218;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  font-size: 30px;
+  outline: 3px solid #297929;
+  margin-right: 5x;
+}
+
+.remove-selected {
+  height: 80px;
+  width: 310px;
+  box-shadow: 2px 4px 2px 2px #0d2a46;
+  font-weight: bold;
+  background: #76aadc;
+  border: 7px solid #3f6f9b;
+  color: #3f6f9b;
+  text-shadow: 1px 1px 1px #143350;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  font-size: 30px;
+  outline: 3px solid #21496e;
+}
+
+.input-color {
+  height: 40px;
+  width: 280px;
+  padding: 5px;
+  background-color: #eff2f4;
+  outline: 1px solid #143350;
+  border: 1px solid #3f6f9b;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.dropdown {
+  height: 50px;
+  width: 280px;
+  padding: 5px;
+  background-color: #eff2f4;
+  outline: 1px solid #143350;
+  border: 1px solid #3f6f9b;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
