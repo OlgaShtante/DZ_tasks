@@ -13,4 +13,4 @@ function sum1(value1) {
   return sum2;
 }
 
-sum1(1)(2)(-3).showResult();
+sum1(1)(2)(-3)(4)(5)(-6)(7)(8)(-9)(10).showResult();
