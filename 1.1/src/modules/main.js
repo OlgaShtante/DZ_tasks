@@ -1,3 +1,7 @@
+let button = document.querySelector(".btn");
+
+button.addEventListener("click", plus);
+
 function plus() {
   let num1, num2, sum;
 
@@ -8,6 +12,5 @@ function plus() {
   num2 = parseInt(num2);
 
   sum = num1 + num2;
-  debugger;
   alert(`Result is ${sum}`);
 }
