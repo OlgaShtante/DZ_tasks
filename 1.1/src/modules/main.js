@@ -9,5 +9,5 @@ function plus() {
 
   sum = num1 + num2;
   debugger;
-  alert(sum);
+  alert(`Result is ${sum}`);
 }
