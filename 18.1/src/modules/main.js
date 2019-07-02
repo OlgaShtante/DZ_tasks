@@ -8,7 +8,7 @@ function showSlides() {
   }
   cardSlideIndex++;
   if (cardSlideIndex > cardSlide.length) {
-    cardsSlideIndex = 1;
+    cardSlideIndex = 1;
   }
   cardSlide[cardSlideIndex - 1].style.display = "block";
 
