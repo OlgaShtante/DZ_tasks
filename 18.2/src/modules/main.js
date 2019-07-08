@@ -57,9 +57,9 @@ function hideArrows() {
 
 carouselArea.addEventListener("mouseover", showArrows);
 carouselArea.addEventListener("mouseleave", hideArrows);
-leftArrow.addEventListener("mouseover", () => {
+leftArrow.addEventListener("click", () => {
   switchSlidesByArrows(-1);
 });
-rightArrow.addEventListener("mouseleave", () => {
+rightArrow.addEventListener("click", () => {
   switchSlidesByArrows(1);
 });
