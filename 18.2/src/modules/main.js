@@ -3,7 +3,7 @@ let switcher;
 
 function switchSlidesAutomatically() {
   const cardSlide = document.getElementsByClassName("slide");
-
+  let i;
   for (i = 0; i < cardSlide.length; i++) {
     cardSlide[i].style.display = "none";
   }
