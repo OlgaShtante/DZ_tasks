@@ -26,7 +26,6 @@ showSlideSwitcher(slideSwitcherIndex);
 
 function switchSlidesByArrows(slideShow) {
   showSlideSwitcher((slideSwitcherIndex += slideShow));
-  console.log("click");
 }
 
 function showSlideSwitcher(slideShow) {
