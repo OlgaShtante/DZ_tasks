@@ -103,10 +103,10 @@ body {
 }
 .arrows {
   display: none;
-  border-right: 4px solid darkgrey;
-  border-bottom: 4px solid darkgrey;
-  width: 10px;
-  height: 10px;
+  border-right: 7px solid darkgrey;
+  border-bottom: 7px solid darkgrey;
+  width: 15px;
+  height: 15px;
   position: absolute;
   top: 160px;
 }

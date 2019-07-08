@@ -6,7 +6,7 @@ const rightArrow = document.getElementById("arrow-right");
 
 function switchSlidesAutomatically() {
   const cardSlide = document.getElementsByClassName("slide");
-  let i;
+  let i = 0;
   for (i = 0; i < cardSlide.length; i++) {
     cardSlide[i].style.display = "none";
   }
@@ -29,7 +29,7 @@ function switchSlidesByArrows(slideShow) {
 }
 
 function showSlideSwitcher(slideShow) {
-  let i;
+  let i = 0;
   const slides = document.getElementsByClassName("slide");
   if (slideShow > slides.length) {
     slideSwitcherIndex = 1;
