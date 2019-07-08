@@ -1,5 +1,8 @@
 let cardSlideIndex = 0;
 let switcher;
+const carouselArea = document.getElementById("carousel-area");
+const leftArrow = document.getElementById("arrow-left");
+const rightArrow = document.getElementById("arrow-right");
 
 function switchSlidesAutomatically() {
   const cardSlide = document.getElementsByClassName("slide");
@@ -17,23 +20,17 @@ function switchSlidesAutomatically() {
 
 switchSlidesAutomatically();
 
-const carouselArea = document.getElementById("carousel-area");
-const leftChevron = document.getElementById("arrow-left");
-const rightChevron = document.getElementById("arrow-right");
-
-carouselArea.addEventListener("mouseover", showChevrons);
-carouselArea.addEventListener("mouseleave", hideChevrons);
-
 let slideSwitcherIndex = 1;
 let slideShow;
 showSlideSwitcher(slideSwitcherIndex);
 
-function switchSlidesByChevrons(slideShow) {
+function switchSlidesByArrows(slideShow) {
   showSlideSwitcher((slideSwitcherIndex += slideShow));
+  console.log("click");
 }
 
 function showSlideSwitcher(slideShow) {
-  let i = 0;
+  let i;
   const slides = document.getElementsByClassName("slide");
   if (slideShow > slides.length) {
     slideSwitcherIndex = 1;
@@ -47,14 +44,23 @@ function showSlideSwitcher(slideShow) {
   slides[slideSwitcherIndex - 1].style.display = "block";
 }
 
-function showChevrons() {
+function showArrows() {
   clearTimeout(switcher);
-  leftChevron.style.display = "inline-block";
-  rightChevron.style.display = "inline-block";
+  leftArrow.style.display = "inline-block";
+  rightArrow.style.display = "inline-block";
 }
 
-function hideChevrons() {
+function hideArrows() {
   switchSlidesAutomatically();
-  leftChevron.style.display = "none";
-  rightChevron.style.display = "none";
+  leftArrow.style.display = "none";
+  rightArrow.style.display = "none";
 }
+
+carouselArea.addEventListener("mouseover", showArrows);
+carouselArea.addEventListener("mouseleave", hideArrows);
+leftArrow.addEventListener("mouseover", () => {
+  switchSlidesByArrows(-1);
+});
+rightArrow.addEventListener("mouseleave", () => {
+  switchSlidesByArrows(1);
+});

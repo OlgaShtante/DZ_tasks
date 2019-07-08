@@ -101,7 +101,7 @@ body {
 #arrow-right {
   transform: rotate(-45deg);
 }
-.chevron {
+.arrows {
   display: none;
   border-right: 4px solid darkgrey;
   border-bottom: 4px solid darkgrey;
