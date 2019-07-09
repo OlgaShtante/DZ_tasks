@@ -1,5 +1,5 @@
 function delay(milliseconds) {
-  let myPromise = new Promise(function(resolve) {
+  const myPromise = new Promise(function(resolve) {
     setTimeout(resolve, milliseconds);
   });
   return myPromise;
