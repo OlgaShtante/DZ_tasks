@@ -1,0 +1,28 @@
+body {
+  font-family: "Georgia";
+  background-color: #f7fff0;
+  text-align: left;
+}
+
+h1 {
+  margin-top: 100px;
+  margin-left: 120px;
+  margin-bottom: 100px;
+  font-size: 60px;
+  color: #2275c4;
+  text-shadow: 2px 1px #15355f;
+}
+
+span {
+  font-size: 40px;
+  color: rgb(5, 7, 68);
+}
+
+a {
+  color: rgb(5, 7, 68);
+  font-size: 40px;
+}
+
+.linkDiv {
+  margin-left: 120px;
+}
