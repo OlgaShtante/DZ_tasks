@@ -1,0 +1,17 @@
+body {
+  text-align: center;
+  font-family: "Arial";
+  background-color: antiquewhite;
+}
+
+#btn {
+  margin-top: 200px;
+  height: 80px;
+  width: 160px;
+  color: rgb(141, 231, 141);
+  font-size: 40px;
+  text-shadow: 2px 2px 3px darkgreen;
+  background-color: rgb(38, 148, 38);
+  border-radius: 10px;
+  border: 2px solid darkgreen;
+}
