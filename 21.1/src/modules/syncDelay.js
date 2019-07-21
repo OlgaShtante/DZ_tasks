@@ -10,5 +10,8 @@ function makeSyncDelay(name, seconds) {
   const after = Date.now();
   log(name, before, after, `set delay is ${seconds} sec;`);
 }
+//Замыкание на before и after:
+//функция log имеет доступ к входным параметрам before, after
+//которые инициализированы во внешнем лексическом окружении.
 
 export { makeSyncDelay };
