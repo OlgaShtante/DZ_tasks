@@ -1,0 +1,21 @@
+body {
+  text-align: center;
+  font-family: "Arial";
+  background-color: antiquewhite;
+}
+
+div {
+  margin-top: 200px;
+  font-size: 70px;
+}
+
+a {
+  color: lightgreen;
+  text-shadow: 2px 2px 2px forestgreen;
+  text-decoration: none;
+}
+
+/* a:hover { //too bold underline
+  text-decoration: underline;
+  text-underline-position: under;
+} */
