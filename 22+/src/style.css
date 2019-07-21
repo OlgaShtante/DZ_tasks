@@ -1,0 +1,12 @@
+body {
+  text-align: center;
+  font-family: "Arial";
+  background-color: rgb(255, 231, 166);
+}
+
+div {
+  margin-top: 200px;
+  font-size: 70px;
+  color: forestgreen;
+  text-shadow: 2px 3px 3px darkolivegreen;
+}
