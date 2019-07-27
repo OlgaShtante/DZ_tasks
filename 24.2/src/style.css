@@ -1,0 +1,44 @@
+body {
+  text-align: center;
+  font-family: "Comic Sans MS";
+  background-color: antiquewhite;
+}
+
+h1 {
+  margin-top: 100px;
+  font: bold;
+  font-size: 40px;
+  color: rgb(159, 238, 135);
+  text-shadow: 2px 2px 1px forestgreen;
+}
+
+div {
+  margin-top: 70px;
+}
+
+button {
+  margin-left: 20px;
+  height: 70px;
+  width: 100px;
+  font: bold;
+  font-size: 26px;
+  color: rgb(108, 221, 73);
+  text-shadow: 1px 1px 0.5px forestgreen;
+  background-color: rgb(170, 241, 148);
+  border-radius: 5px;
+}
+
+input {
+  height: 40px;
+  width: 500px;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 22px;
+  font: bold;
+  color: forestgreen;
+}
+
+input::placeholder {
+  color: rgb(203, 243, 191);
+  font-size: 20px;
+}

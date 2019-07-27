@@ -1,0 +1,23 @@
+GET https://my-json-server.typicode.com/OlgaShtante/json-database/topics HTTP/1.1
+//Request to get all entities;
+//Response - http://prntscr.com/okn6sr
+
+GET https://my-json-server.typicode.com/OlgaShtante/json-database/topics/12 HTTP/1.1
+//Request to get a certain topic;
+//Response - http://prntscr.com/okn705
+
+POST https://my-json-server.typicode.com/OlgaShtante/json-database/topics HTTP/1.1
+content-type: application/json
+//Simulation of adding an extra topic;
+//Response - http://prntscr.com/okn761
+
+{
+"id":"13",
+"Slovenian":"Hranо",
+"Russian":"Еда"
+}
+
+GET https://my-json-server.typicode.com/OlgaShtante/json-database/topics/13 HTTP/1.1
+//Simulation of verification that the extra topic has been added.
+//Response - 404 http://prntscr.com/okn7a4 
+//The previous post request has not created a new real entity.

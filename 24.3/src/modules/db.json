@@ -1,0 +1,129 @@
+{
+  "topics": [
+    {
+      "id": "1",
+      "Slovenian": "Abeceda",
+      "Russian": "Алфавит"
+    },
+    {
+      "id": "2",
+      "Slovenian": "Števila",
+      "Russian": "Числа"
+    },
+    {
+      "id": "3",
+      "Slovenian": "Barve",
+      "Russian": "Цвета"
+    },
+    {
+      "id": "4",
+      "Slovenian": "Družina",
+      "Russian": "Cемья"
+    },
+    {
+      "id": "5",
+      "Slovenian": "Sadje",
+      "Russian": "Фрукты"
+    },
+    {
+      "id": "6",
+      "Slovenian": "Živali",
+      "Russian": "Животные"
+    },
+    {
+      "id": "7",
+      "Slovenian": "Poklici",
+      "Russian": "Профессии"
+    },
+    {
+      "id": "8",
+      "Slovenian": "Človeško telo",
+      "Russian": "Тело человека"
+    },
+    {
+      "id": "9",
+      "Slovenian": "Čas",
+      "Russian": "Время"
+    },
+    {
+      "id": "10",
+      "Slovenian": "Zelenjava",
+      "Russian": "Овощи"
+    },
+    {
+      "id": "11",
+      "Slovenian": "Pozdravi",
+      "Russian": "Приветствие"
+    },
+    {
+      "id": "12",
+      "Slovenian": "Dejanja",
+      "Russian": "Активности",
+      "words": [
+        {
+          "entity": "1",
+          "Slovenian": "biti",
+          "Russian": "быть"
+        },
+        {
+          "entity": "2",
+          "Slovenian": "govoriti",
+          "Russian": "разговаривать"
+        },
+        {
+          "entity": "3",
+          "Slovenian": "dotakniti",
+          "Russian": "прикасаться"
+        },
+        {
+          "entity": "4",
+          "Slovenian": "objeti",
+          "Russian": "обнимать"
+        },
+        {
+          "entity": "5",
+          "Slovenian": "smejati",
+          "Russian": "cмеяться"
+        },
+        {
+          "entity": "6",
+          "Slovenian": "peti",
+          "Russian": "петь"
+        },
+        {
+          "entity": "7",
+          "Slovenian": "poljubiti",
+          "Russian": "целовать"
+        },
+        {
+          "entity": "8",
+          "Slovenian": "plesati",
+          "Russian": "танцевать"
+        },
+        {
+          "entity": "9",
+          "Slovenian": "pisati",
+          "Russian": "писать"
+        },
+        {
+          "entity": "10",
+          "Slovenian": "brati",
+          "Russian": "читать"
+        },
+        {
+          "entity": "11",
+          "Slovenian": "risati",
+          "Russian": "рисовать"
+        },
+        {
+          "entity": "12",
+          "Slovenian": "nasmehniti se",
+          "Russian": "улыбаться"
+        }
+      ]
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
