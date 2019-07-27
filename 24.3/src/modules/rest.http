@@ -2,9 +2,13 @@ GET https://my-json-server.typicode.com/OlgaShtante/json-database/topics HTTP/1.
 //Request to get all entities;
 //Response - http://prntscr.com/okn6sr
 
+###
+
 GET https://my-json-server.typicode.com/OlgaShtante/json-database/topics/12 HTTP/1.1
 //Request to get a certain topic;
 //Response - http://prntscr.com/okn705
+
+###
 
 POST https://my-json-server.typicode.com/OlgaShtante/json-database/topics HTTP/1.1
 content-type: application/json
@@ -16,6 +20,8 @@ content-type: application/json
 "Slovenian":"Hranо",
 "Russian":"Еда"
 }
+
+###
 
 GET https://my-json-server.typicode.com/OlgaShtante/json-database/topics/13 HTTP/1.1
 //Simulation of verification that the extra topic has been added.
